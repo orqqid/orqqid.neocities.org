@@ -1,12 +1,17 @@
+
+#bg {
+    background-image: url("imgs/header.jpg");
+    background-size: cover;
+}
 #main {
 display: flex;
 flex-direction: column; 
-
-
+gutter: 70px;
+margin: 60px;
 }
 
 #header {
-    background-image: url("imgs/header.jpg");
+    background-image: url("imgs/background1.jpg");
     background-size: 100% auto;
     padding: 40px;
     text-align: center;
@@ -17,4 +22,14 @@ flex-direction: column;
 #headertxt {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ! font */
+.cherry-bomb-one-regular {
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
 }
