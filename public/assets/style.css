@@ -1,26 +1,50 @@
+/* Blinking Hello Kitty Angel - https://www.cursors-4u.com/cursor/blinking-hello-kitty-5 */
+* {
+  cursor: url('https://cdn.cursors-4u.net/css-previews/blinking-hello-kitty-angel-c592abfe-css.webp') 0 0, auto !important;
+}
+/* End www.Cursors-4U.com Code */
+
+
 
 #bg {
-    background-image: url("imgs/header.jpg");
+    background-image: url("imgs/bg.jpg");
     background-size: cover;
+    cursor: url('https://cdn.cursors-4u.net/previews/angel-wing-heart-800e0eca-32.webp') 32 32, auto !important;
 }
 #main {
+    background-color: white;
 display: flex;
 flex-direction: column; 
-gutter: 70px;
 margin: 60px;
-border-width: 10px;
-          border-style: solid;
-          border-image: url("https://file.garden/ZZ2PUl9MPilKgIvB/collection/borders/xnxzti-1.png") 8 fill round;
-}
+box-shadow: inset 13px 0px 6px -10px rgb(66 66 66 / 56%), inset -13px 0px 6px -10px rgb(66 66 66 / 56%), inset 0px 13px 6px -10px #ffffff, inset 0px -13px 6px -10px rgb(66 66 66 / 38%);
+filter: drop-shadow(0px 0px 1px #424242);
+-webkit-filter: drop-shadow(0px 0px 1px #424242);
+background:white;
+color:black;
+width:calc(100% - 20px);
+height:fit-content;
+/* max-height:190px; */
+overflow-y:auto;
+border-radius:10px;
+padding:8px 10px 10px 10px;
+box-sizing: border-box;
+margin:0 auto;
+}       
 
 #header {
-    background-image: url("imgs/background1.jpg");
-    background-size: 100% auto;
+    background-image: url("imgs/header.jpg");
     padding: 40px;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     text-align: left;
+      background-repeat: no-repeat;
+ background-position-x: 100%;
+  /* position: relative; */
+  background-position-y: 100%;
+  overflow: hidden;
+  
+  
 }
 
 #headertxt {
