@@ -10,6 +10,8 @@ body {
     width: 100%; */
     overflow: hidden;
     background-color: #f0f0f0;
+      background-position: absolute;
+    
 }
 
 #bg {
@@ -19,46 +21,69 @@ body {
     cursor: url('https://cdn.cursors-4u.net/previews/angel-wing-heart-800e0eca-32.webp') 32 32, auto !important;
     object-fit: cover;
   margin: 60px;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 #main {
     background-color: white;
 display: flex;
 flex-direction: column; 
+/* dimensions */
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+/* border shadow */
 box-shadow: inset 13px 0px 6px -10px rgb(66 66 66 / 56%), inset -13px 0px 6px -10px rgb(66 66 66 / 56%), inset 0px 13px 6px -10px #ffffff, inset 0px -13px 6px -10px rgb(66 66 66 / 38%);
 filter: drop-shadow(0px 0px 1px #424242);
 -webkit-filter: drop-shadow(0px 0px 1px #424242);
 background:white;
 color:black;
-width:calc(100% - 20px);
-height:fit-content;
+/* height:fit-content; */
+justify-content: space-between;
+align-items: center;
 
 overflow-y:auto;
 border-radius:10px;
-padding:8px 10px 10px 10px;
-box-sizing: border-box;
-margin: auto;
+
 }       
 
 #header {
-    background-image: url("imgs/header.jpg");
-    padding: 40px;
+/* * div measurements  */
+align-items: center;
+  /* etc */
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+/* margin: 0 auto; */
+    /* z-index: 10; */
+    /* bg image */
+     background-image: url("imgs/header.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     /* background-clip: padding-box; */
+
+     
+
+    /* * text settings */
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     text-align: left;
-      background-repeat: no-repeat;
- background-position-x: 100%;
-  /* position: relative; */
-  background-position-y: 100%;
-  overflow: hidden;
-  
-  
+     
+      
 }
+     
+
 
 #headertxt {
-    color: white;
+ color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+   
+
 
 /* ! font */
 .cherry-bomb-one-regular {
@@ -68,4 +93,29 @@ margin: auto;
   color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 50px;
+}
+
+
+#sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+#nav {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: inset 13px 0px 6px -10px rgb(66 66 66 / 56%), inset -13px 0px 6px -10px rgb(66 66 66 / 56%), inset 0px 13px 6px -10px #ffffff, inset 0px -13px 6px -10px rgb(66 66 66 / 38%);
+    filter: drop-shadow(0px 0px 1px #424242);
+    -webkit-filter: drop-shadow(0px 0px 1px #424242);
+}
+
+#intro {
+  width: 300px; 
+  
 }
