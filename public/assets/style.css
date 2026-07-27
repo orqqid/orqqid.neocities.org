@@ -36,7 +36,7 @@ body {
     align-items: flex-start;
     justify-content: center;
    
-    overflow: hidden;
+    
     background-image: url("imgs/bg.jpg");
     background-position: center;
     background-size: cover;
@@ -47,7 +47,7 @@ body {
       padding: 0;
       /* width: 864px;
       height: 753px; */
-      /* overflow: auto; */
+      overflow: visible;
 }
 
 
@@ -78,12 +78,13 @@ box-sizing: border-box;
    
 
 }
-#wrapper {
+#wrap {
    position: relative; 
     width: 864px;       
     min-width: 864px;
     margin: 20px auto;  
     flex-shrink: 0;
+    overflow: visible;
 }
 /* ==================== */
 /* HEADER */
@@ -224,8 +225,8 @@ width: 200px;
     position: absolute;
     z-index: 100;
     left: 425px;
-    top: -20px;
+    top: -2px;
     transform: translateX(-50%);
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
 }
