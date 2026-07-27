@@ -1,30 +1,34 @@
 /* Blinking Hello Kitty Angel - https://www.cursors-4u.com/cursor/blinking-hello-kitty-5 */
 * {
-  cursor: url('https://cdn.cursors-4u.net/css-previews/blinking-hello-kitty-angel-c592abfe-css.webp') 0 0, auto !important;
+    cursor: url('https://cdn.cursors-4u.net/css-previews/blinking-hello-kitty-angel-c592abfe-css.webp') 0 0, auto !important;
+    box-sizing: border-box;
 }
 
 :root {
- 
-/* ? Text Colours: */
+
+    /* ? Text Colours: */
 
 
 
-/* ? Text: */
---header-font: "Cherry Bomb One", system-ui;
---paragraph-font: "Arial", sans-serif;
+    /* ? Text: */
+    --header-font: "Cherry Bomb One", system-ui;
+    --paragraph-font: "Arial", sans-serif;
+    --header-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 
-/* ? Other Settings */
---margin: 10px;
---padding: 20px;
---border:
---sidebar-width: 200px;
- --box-sizing: border-box;
---border-radius: 10px;
---box-shadow: inset 13px 0px 6px -10px rgb(66 66 66 / 56%), inset -13px 0px 6px -10px rgb(66 66 66 / 56%), inset 0px 13px 6px -10px #ffffff, inset 0px -13px 6px -10px rgb(66 66 66 / 38%);
---filter: drop-shadow(0px 0px 1px #424242);--webkit-filter: drop-shadow(0px 0px 1px #424242);
+    /* ? Other Settings */
+    --margin: 10px;
+    --padding: 20px;
+    --border:
+        --sidebar-width: 200px;
+    --box-sizing: border-box;
+    --border-radius: 10px;
+    --box-shadow: inset 13px 0px 6px -10px rgb(66 66 66 / 56%), inset -13px 0px 6px -10px rgb(66 66 66 / 56%), inset 0px 13px 6px -10px #ffffff, inset 0px -13px 6px -10px rgb(66 66 66 / 38%);
+    --filter: drop-shadow(0px 0px 1px #424242);
+    --webkit-filter: drop-shadow(0px 0px 1px #424242);
 
 }
+
 /* End www.Cursors-4U.com Code */
 
 body {
@@ -33,176 +37,126 @@ body {
     justify-content: center;
     min-height: 100vh;
     overflow: hidden;
-      background-image: url("imgs/bg.jpg");
-    background-position: center;
-  margin: 0;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-/* #bg {
     background-image: url("imgs/bg.jpg");
     background-position: center;
+    margin: 0;
     background-size: cover;
-    cursor: url('https://cdn.cursors-4u.net/previews/angel-wing-heart-800e0eca-32.webp') 32 32, auto !important;
-    object-fit: cover;
-  margin: 60px;
-  background-size: cover;
-  background-attachment: fixed;
+    background-attachment: fixed;
+}
 
-} */
-#main {
-    /* background-color: white; */
-display: flex;
-flex-direction: column; 
-/* dimensions */
-width: 100%;
-max-width: 1200px;
-margin: 0 auto;
-padding: 20px;
-/* border shadow */
-box-shadow: inset 13px 0px 6px -10px rgb(66 66 66 / 56%), inset -13px 0px 6px -10px rgb(66 66 66 / 56%), inset 0px 13px 6px -10px #ffffff, inset 0px -13px 6px -10px rgb(66 66 66 / 38%);
-filter: drop-shadow(0px 0px 1px #424242);
--webkit-filter: drop-shadow(0px 0px 1px #424242);
-/* background:white; */
-color:black;
-/* height:fit-content; */
-justify-content: space-between;
-align-items: center;
+.container {
+    display: grid;
+    grid-template:
+        " header header "
+        " mySidebar myMaincontent" ;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
 
-overflow-y:auto;
-border-radius:10px;
-position: relative;
+    /* dimensions */
+    width: 100%;
+    max-width: 1200px;
+    margin: var(--margin);
+    padding: var(--padding);
+    box-shadow: var(--box-shadow);
+    color: black;
+    justify-content: space-between;
+    align-items: center;
 
-}       
+    overflow-y: auto;
+    border-radius: 10px;
+    position: relative;
 
-#header {
-    position: sticky;
-/* * div measurements  */
-align-items: center;
-  /* etc */
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-/* margin: 0 auto; */
-    /* z-index: 10; */
+}
+
+/* ==================== */
+/* HEADER */
+/* ==================== */
+
+header {
+    display: grid;
+    grid-area: header;
+    padding: var(--padding);
+    width: 100%;
+    height: auto;
     /* bg image */
-     background-image: url("imgs/header.jpg");
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     /* background-clip: padding-box; */
-
-     
+    background-image: url("imgs/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     /* * text settings */
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     text-align: left;
-     
-      
+
+
 }
-     
 
-
-#headertxt {
-    display:block;
- color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.header-sections {
+    padding: 10px;
 }
-   
 
-
-/* ! font */
+/* ! header font */
 .cherry-bomb-one-regular {
-  font-family: var(--header-font);
-  font-weight: 400;
-  font-style: normal;
-  color: white;
+    font-family: var(--header-font);
+    font-weight: 400;
+    font-style: normal;
+    color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 50px;
 }
 
 
-#sections {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 20px;
-    gap: 50px;
-    width: 100%;
-    min-height: 400px;
-    position: relative;
+/* ==================== */
+/* LEFT SIDEBAR */
+/* ==================== */
+
+
+aside {
+    grid-area: mySidebar;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     overflow: hidden;
-   
+    padding: var(--padding);
+    box-sizing: var(--box-sizing)
 }
 
-#nav {
-    width: 400px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    box-sizing: var(--box-sizing);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    filter: var(--filter);
-    -webkit-filter: var(--webkit-filter);
-}
-
-#intro {
-    display: block;
-  width: 300px; 
-  margin: auto;
-  background-color: #f0f0f0;
-
-}
-
-/* ! pc image */
-#extra {
-   max-width: 100%;
-   /* max-width: max-content; */
-   margin: 0 auto;
-   /* z-index: 1000; */
-   /* margin: 3% 2%; */
-   position: relative;
-   /* padding: 10px; */
-   display: inline-block;
-   background-color: #f0f0f0;
-   align-self: flex-start;
-}
-
-#pc-text {
-    /* width: 100%;
-    height: auto;
-    display: block;
-    padding: 10px;
-    margin: 0 auto; */
-    position: absolute;
-    z-index: 1000;
-    top: 25%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-}
-
-#pc-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    /* padding: 10px; */
-    /* margin: 0 auto; */
-    /* position: absolute; */
-    /* top: 150px;
-    left: 50px; */
-}
-
-#sidebar {
+.left-sidebar {
     width: 200px;
-    background-color: #f0f0f0;
     padding: 10px;
     box-sizing: var(--box-sizing);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     filter: var(--filter);
     -webkit-filter: var(--webkit-filter);
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#sidebar-section {
+    padding: 10px
+}
+
+
+/* ==================== */
+/* MAIN */
+/* ==================== */
+
+
+.main {
+    grid-area: myMainContent;
+   border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    padding: var(--padding);
+    box-sizing: var(--box-sizing)
+}
+
+.main-section {
+padding: 10px
 }
