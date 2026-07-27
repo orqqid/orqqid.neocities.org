@@ -172,10 +172,18 @@ padding: 10px;
     font-size: 18px bold;
 }
 
-/* footer {
+footer {
+grid-area: footer;
+ box-sizing: var(--box-sizing);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    filter: var(--filter);
+    -webkit-filter: var(--webkit-filter);
+  align-self: start;
+  position: relative;
+  padding: var(--padding);
 
-
-} */
+}
 
 
 .img-overlay {
