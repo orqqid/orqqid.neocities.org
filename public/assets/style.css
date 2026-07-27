@@ -77,7 +77,7 @@ body {
 header {
     display: grid;
     grid-area: header;
-    padding: var(--padding);
+    padding: 20px;
     width: 100%;
     height: auto;
     /* bg image */
