@@ -35,13 +35,18 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    min-height: 100vh;
+   
     overflow: hidden;
     background-image: url("imgs/bg.jpg");
     background-position: center;
-    margin: 0;
     background-size: cover;
     background-attachment: fixed;
+    flex-wrap: nowrap;
+    margin: 0;
+      padding: 0;
+      width: 864px;
+      height: 753px;
+      overflow: auto;
 }
 
 .container {
@@ -52,17 +57,16 @@ body {
         "footer footer";
     grid-template-columns: 200px 1fr;
     grid-gap: 10px;
-
+box-sizing: border-box;
     /* dimensions */
-    width: 100%;
-    max-width: 1200px;
-    margin: var(--margin);
+    width: 864px;
+    
+    margin: 20px;
     padding: var(--padding);
     box-shadow: var(--box-shadow);
     color: black;
     justify-content: space-between;
     align-items: center;
-
     overflow-y: auto;
     border-radius: 10px;
     position: relative;
@@ -91,12 +95,14 @@ header {
     font-size: 24px;
     font-weight: bold;
     text-align: left;
+    z-index: 3;
 
 
 }
 
 .header-sections {
     padding: 10px;
+    z-index: 3;
 }
 
 /* ! header font */
@@ -172,6 +178,9 @@ padding: 10px;
     font-size: 18px bold;
 }
 
+/* ==================== */
+/* FOOTER */
+/* ==================== */
 footer {
 grid-area: footer;
  box-sizing: var(--box-sizing);
@@ -194,4 +203,18 @@ left: -50px;
 width: 200px;
 
 
+}
+
+
+
+/* IMAGES ETC */
+
+.sanrio {
+    position: absolute;
+    z-index: 100;
+    left: 75px;
+    top: 5px;
+    transform: translate (-50%);
+    overflow: hide;
+    white-space: nowrap;
 }
