@@ -19,7 +19,7 @@
     /* ? Other Settings */
     --margin: 10px;
     --padding: 20px;
-    --border:
+    /* --border:  */
         --sidebar-width: 200px;
     --box-sizing: border-box;
     --border-radius: 10px;
@@ -48,9 +48,10 @@ body {
     display: grid;
     grid-template:
         " header header "
-        " mySidebar myMaincontent" ;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 20px;
+        " sidebar main" 
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-gap: 10px;
 
     /* dimensions */
     width: 100%;
@@ -114,23 +115,19 @@ header {
 
 
 aside {
-    grid-area: mySidebar;
+    grid-area: sidebar;
+    display:flex;
+    flex-direction: column;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     overflow: hidden;
     padding: var(--padding);
-    box-sizing: var(--box-sizing)
+    box-sizing: var(--box-sizing);
+    width: 200px;
+    align-self: start;
 }
 
-.left-sidebar {
-    width: 200px;
-    padding: 10px;
-    box-sizing: var(--box-sizing);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    filter: var(--filter);
-    -webkit-filter: var(--webkit-filter);
-}
+
 
 .sidebar-title {
     font-size: 18px;
@@ -148,15 +145,23 @@ aside {
 /* ==================== */
 
 
-.main {
-    grid-area: myMainContent;
-   border-radius: var(--border-radius);
+main {
+    grid-area: main;
+    box-sizing: var(--box-sizing);
+    border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    overflow: hidden;
-    padding: var(--padding);
-    box-sizing: var(--box-sizing)
+    filter: var(--filter);
+    -webkit-filter: var(--webkit-filter);
+  align-self: start;
+
 }
 
 .main-section {
-padding: 10px
+padding: 10px;
+ 
 }
+
+/* footer {
+
+
+} */
