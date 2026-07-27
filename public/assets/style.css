@@ -14,7 +14,7 @@
     --header-font: "Cherry Bomb One", system-ui;
     --paragraph-font: "Arial", sans-serif;
     --header-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
+--fontnav: "Sour Gummy", system-ui;
 
     /* ? Other Settings */
     --margin: 10px;
@@ -30,7 +30,9 @@
 }
 
 /* End www.Cursors-4U.com Code */
-
+a {
+    text-decoration: none;
+}
 body {
     display: flex;
     align-items: flex-start;
@@ -154,7 +156,8 @@ aside {
 
 .sidebar-title {
     /* font-size: 18px; */
-    font-weight: bold;
+    font-size: 20px;
+    font-family: var(--header-font);
 
 }
 
@@ -237,30 +240,30 @@ width: 200px;
 
 
 .button {
-  font-family: var(--fontsmall);
+  font-family: var(--fontnav);
 font-weight: 500;
+font-size: 20px;
 display: inline-block;
 padding: 3px 3px 3px ;
 text-align: left;
 width: 180px;
 color: white;
-background-color: var(--s-main);
-box-shadow: inset 0px 0px 0px 1px var(--s-main), 
-inset 0px -11px var(--s-dark), 
-inset 0px 2px 0px 0px var(--s-highlight);
 text-shadow: rgb(255, 181, 213) 1px 1px 0px, rgb(255, 181, 213) 0px 1px 0px, rgb(255, 181, 213) 1px 0px 0px, rgb(255, 181, 213) 0px -1px 0px, rgb(255, 181, 213) -1px 0px 0px, rgb(255, 181, 213) -1px -1px 0px, rgb(255, 181, 213) 1px -1px 0px, rgb(255, 181, 213) -1px 1px 0px;
-border: 1px solid var(--outline);
+border: 1px  var(--outline);
 border-top: none;
 cursor: pointer;
+border-radius: 12px;
 
 
   background-image: url('imgs/buttonbg.jpg');
-  
-
 
 }
 
-.nav {
-
-
+.sour-gummy {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 2px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
