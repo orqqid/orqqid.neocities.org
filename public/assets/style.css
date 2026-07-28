@@ -17,7 +17,7 @@
     --header-text-shadow: 2px 2px 4px rgba(250, 176, 225, 0.935);
 --fontnav: "Sour Gummy", sans-serif;
 --heading-color: white;
-
+--button-text-shadow: rgb(255, 181, 213) 1px 1px 0px, rgb(237, 244, 162) 0px 1px 0px, rgb(255, 181, 213) 1px 0px 0px, rgb(237, 244, 162) 0px -1px 0px, rgb(255, 181, 213) -1px 0px 0px, rgb(237, 244, 162) -1px -1px 0px, rgb(255, 181, 213) 1px -1px 0px, rgb(255, 181, 213) -1px 1px 0px;
 
     /* ? Other Settings */
     --margin: 10px;
@@ -98,30 +98,53 @@ box-sizing: border-box;
 header {
     display: grid;
     grid-area: header;
-    padding: 20px;
+    padding: 0px;
     width: 100%;
     height: auto;
     /* bg image */
-    background-image: url("imgs/header.jpg");
+   
+
+} 
+    /* * text settings */
+.header-text{ 
+    font-family: var(--header-font);
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    /* z-index: 100;
+    top: 30px;
+    left: 100px;
+    position: absolute; */
+    text-shadow: var(--header-text-shadow);
+}
+
+
+
+.header-sections {
+    /* padding: 10px; */
+    z-index: 3;
+    position: relative;
+     background-image: url("imgs/header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    /* * text settings */
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: left;
-    z-index: 3;
-    text-shadow: var(--header-text-shadow);
-
-
+     -webkit-mask-image: radial-gradient(circle, black 80%, transparent 100%);
+  mask-image: radial-gradient(circle, black 80%, transparent 100%);
 }
 
-.header-sections {
-    padding: 10px;
-    z-index: 3;
-}
+/* .header-sections::before {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+
+      background-image: url("imgs/header.jpg");
+    background-size: cover; */
+    /* -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
+  mask-image: radial-gradient(circle, black 60%, transparent 100%); */
+
 
 /* ! header font */
 .cherry-bomb-one-regular {
@@ -246,7 +269,7 @@ padding: 3px 3px 3px ;
 text-align: left;
 width: 180px;
 color: white;
-text-shadow: rgb(255, 181, 213) 1px 1px 0px, rgb(237, 244, 162) 0px 1px 0px, rgb(255, 181, 213) 1px 0px 0px, rgb(237, 244, 162) 0px -1px 0px, rgb(255, 181, 213) -1px 0px 0px, rgb(237, 244, 162) -1px -1px 0px, rgb(255, 181, 213) 1px -1px 0px, rgb(255, 181, 213) -1px 1px 0px;
+text-shadow: var(--button-text-shadow);
 border: 1px;
 border-top: none;
 cursor: pointer;
