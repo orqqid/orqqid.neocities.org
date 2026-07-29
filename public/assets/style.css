@@ -231,9 +231,6 @@ background-image: url(imgs/sidebar.jpg);
 background: 2px solid red;
 }
 
-
-
-
 .upd-box {
    overflow: scroll;
 height:75px;
@@ -241,6 +238,11 @@ height:75px;
 .upd-txt {
      font-family: var(--main-font);
      color: pink;
+}
+.blinkies {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column ;
 }
 /* ==================== */
 /* MAIN */
