@@ -1,5 +1,5 @@
 /* Blinking Hello Kitty Angel - https://www.cursors-4u.com/cursor/blinking-hello-kitty-5 */
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     cursor: url('https://cdn.cursors-4u.net/css-previews/blinking-hello-kitty-angel-c592abfe-css.webp') 0 0, auto !important;
     box-sizing: border-box;
@@ -23,7 +23,7 @@ background-color: #f4e9b8;
 --fontnav: "Sour Gummy", sans-serif;
 --heading-color: white;
 --button-text-shadow: rgb(255, 181, 213) 1px 1px 0px, rgb(161, 246, 144) 0px 1px 0px, rgb(255, 181, 213) 1px 0px 0px, rgb(161, 246, 162) 0px -1px 0px, rgb(255, 181, 213) -1px 0px 0px, rgb(161, 246, 162) -1px -1px 0px, rgb(255, 181, 213) 1px -1px 0px, rgb(161, 246, 213) -1px 1px 0px;
-
+--main-font: "SN Pro", sans-serif;
     /* ? Other Settings */
     /* --margin: 10px; */
     --padding: 10px;
@@ -197,18 +197,16 @@ aside {
 }
 
 
-
 .sidebar-title {
-    /* font-size: 18px; */
+    display: flex;
+    align-items: center;
     font-size: 20px;
     font-family: var(--header-font);
 color: var(--heading-color);
 text-shadow: var(--header-text-shadow);
+height: 50px;
 }
 
-/* #sidebar-section {
-    padding: 10px;
-} */
 
 .sidebar-text {
     width: 100%;
@@ -233,17 +231,17 @@ main {
   z-index: 0;
   padding: var(--padding);
   background-image: url(imgs/main-bg.jpg);
-  margin: 5px;
+  
 
 }
 .main-title {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
      font-size: 25px;
     font-family: var(--header-font);
     color: white;
     text-shadow: var(--header-text-shadow);
-    /* background-color: red; */
     height: 75px;
 }
 
@@ -251,14 +249,15 @@ main {
     width: 100%;
     height: 200px;
 overflow: scroll;
-/* background-color: blue; */
+
 
 
  
 }
 .main-text {
-
+font-family: var(--main-font);
     font-size: 18px bold;
+    color: rgb(255, 107, 184);
 }
 
 /* ==================== */
@@ -302,6 +301,9 @@ grid-area: footer;
 }
 
 .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   font-family: "Sour Gummy", sans-serif;
 font-weight: 500;
 font-size: 20px;
@@ -359,3 +361,4 @@ position: absolute;
     
 
 }
+
