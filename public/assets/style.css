@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+::selection{
+color: rgb(249, 115, 216);
+background-color: #f4e9b8;
+}
 :root {
 
     /* ? Text Colours: */
