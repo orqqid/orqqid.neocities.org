@@ -231,21 +231,16 @@ background-image: url(imgs/sidebar.jpg);
 background: 2px solid red;
 }
 
-.site-upd {
-display: flex;
-    align-items: center;
-    font-size: 18px;
-    font-family: var(--header-font);
-color: var(--heading-color);
-text-shadow: var(--header-text-shadow);
 
-}
+
+
 .upd-box {
-    /* width: 200px; */
-    height: 50px;
-    overflow: scroll;
-    font-family: var(--main-font);
-    color: pink;
+   overflow: scroll;
+height:75px;
+}
+.upd-txt {
+     font-family: var(--main-font);
+     color: pink;
 }
 /* ==================== */
 /* MAIN */
