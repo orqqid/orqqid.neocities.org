@@ -9,6 +9,7 @@
 color: rgb(249, 115, 216);
 background-color: #f4e9b8;
 }
+
 :root {
 
     /* ? Text Colours: */
@@ -141,13 +142,13 @@ header {
     z-index: -1;
     position: relative;
     
-    background-image: url("imgs/header.jpg");
+    background-image: url("imgs/header1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     
-    -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
-    mask-image: radial-gradient(circle, black 60%, transparent 100%);
+    -webkit-mask-image: radial-gradient(circle, rgb(224, 55, 55) 70%, transparent 100%);
+    mask-image: radial-gradient(circle, black 70%, transparent 100%);
 }
 /* .header-sections::before {
     content: "";
