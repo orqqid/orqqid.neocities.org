@@ -233,7 +233,7 @@ background: 2px solid red;
 
 .upd-box {
    overflow: scroll;
-height:75px;
+height:100px;
 }
 .upd-txt {
      font-family: var(--main-font);
