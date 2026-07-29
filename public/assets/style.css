@@ -66,9 +66,11 @@ body {
     display: grid;
     grid-template:
         " header header "
+        "marquee marquee" auto
         " sidebar main" 
         "footer footer";
     grid-template-columns: 200px 1fr;
+   
     grid-gap: 10px;
 box-sizing: border-box;
 
@@ -240,7 +242,9 @@ main {
 }
 
 .main-section {
+
 padding: 10px;
+
  
 }
 .main-text {
@@ -337,4 +341,12 @@ position: absolute;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.marquee {
+    grid-area: marquee;
+    display: block;
+    width: 100%;
+    
+
 }
