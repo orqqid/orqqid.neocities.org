@@ -22,7 +22,7 @@ background-color: #f4e9b8;
     --header-text-shadow: 2px 2px 4px rgba(250, 176, 225, 0.935);
 --fontnav: "Sour Gummy", sans-serif;
 --heading-color: white;
---button-text-shadow: rgb(255, 181, 213) 1px 1px 0px, rgb(237, 244, 162) 0px 1px 0px, rgb(255, 181, 213) 1px 0px 0px, rgb(237, 244, 162) 0px -1px 0px, rgb(255, 181, 213) -1px 0px 0px, rgb(237, 244, 162) -1px -1px 0px, rgb(255, 181, 213) 1px -1px 0px, rgb(255, 181, 213) -1px 1px 0px;
+--button-text-shadow: rgb(255, 181, 213) 1px 1px 0px, rgb(161, 246, 144) 0px 1px 0px, rgb(255, 181, 213) 1px 0px 0px, rgb(161, 246, 162) 0px -1px 0px, rgb(255, 181, 213) -1px 0px 0px, rgb(161, 246, 162) -1px -1px 0px, rgb(255, 181, 213) 1px -1px 0px, rgb(161, 246, 213) -1px 1px 0px;
 
     /* ? Other Settings */
     --margin: 10px;
