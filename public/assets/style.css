@@ -228,6 +228,7 @@ main {
   position: relative;
   z-index: 0;
   padding: var(--padding);
+  background-image: url(imgs/main-bg.jpg);
 
 }
 .main-title {
@@ -235,6 +236,7 @@ main {
     font-family: var(--header-font);
     color: white;
     text-shadow: var(--header-text-shadow);
+    
 }
 
 .main-section {
@@ -259,6 +261,8 @@ grid-area: footer;
   align-self: start;
   position: relative;
   padding: var(--padding);
+  background-image: url(imgs/footer.bg.jpg);
+  background-position: -175px;
 
 }
 
@@ -274,7 +278,15 @@ grid-area: footer;
     overflow: visible;
     white-space: nowrap;
 }
-
+.apple { 
+    position: absolute;
+    z-index: 100;
+    bottom: -115px;
+    right: -1475px;
+    transform: translateX(-50%);
+    overflow: visible;
+    white-space: nowrap;
+}
 
 .button {
   font-family: "Sour Gummy", sans-serif;
