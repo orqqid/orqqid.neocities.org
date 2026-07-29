@@ -65,11 +65,11 @@ body {
     align-self: center;
     display: grid;
     grid-template:
-        " header header "
-        "marquee marquee" auto
-        " sidebar main" 
-        "footer footer";
-    grid-template-columns: 200px 1fr;
+        " header header header " auto
+        "marquee marquee marquee" auto
+        " sidebar main rightside" 1fr
+        "footer footer footer" auto
+   / 200px 1fr 200px;
    
     grid-gap: 10px;
 box-sizing: border-box;
@@ -191,7 +191,7 @@ aside {
     box-sizing: var(--box-sizing);
     align-self: start;
 
-    background-image: url(imgs/sidebar.jpg)
+    background-image: url(imgs/sidebar.jpg);
    
    
 }
@@ -212,12 +212,48 @@ height: 50px;
     width: 100%;
     border: round;
 }
+
+/* ========================== */
+/* RIGHT SIDEBAR */
+/* ========================== */
+.aside2 {
+grid-area: rightside;
+    display:flex;
+    flex-direction: column;
+   z-index: 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding:10px;
+    width: 200px;
+    box-sizing: var(--box-sizing);
+    align-self: start;
+background-image: url(imgs/sidebar.jpg);
+background: 2px solid red;
+}
+
+.site-upd {
+display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: var(--header-font);
+color: var(--heading-color);
+text-shadow: var(--header-text-shadow);
+
+}
+.upd-box {
+    /* width: 200px; */
+    height: 50px;
+    overflow: scroll;
+    font-family: var(--main-font);
+    color: pink;
+}
 /* ==================== */
 /* MAIN */
 /* ==================== */
 
 
 main {
+ 
     display: flex;
     flex-direction: column;
     grid-area: main;
