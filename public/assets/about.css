@@ -1,0 +1,149 @@
+/* =============================== */
+/* ! WEBMASTER.HTML CSS */
+/* =============================== */
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+.cherry-bomb-one-regular {
+    font-family: var(--header-font);
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 50px;
+}
+
+.sour-gummy {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.sn-pro {
+  font-family: "SN Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+
+
+
+    /* ? Text: */
+    --header-font: "Cherry Bomb One", system-ui;
+    --paragraph-font: "Arial", sans-serif;
+    --header-text-shadow: 2px 2px 4px rgba(250, 176, 225, 0.935);
+--fontnav: "Sour Gummy", sans-serif;
+--heading-color: white;
+--button-text-shadow: rgb(255, 181, 213) 1px 1px 0px, rgb(161, 246, 144) 0px 1px 0px, rgb(255, 181, 213) 1px 0px 0px, rgb(161, 246, 162) 0px -1px 0px, rgb(255, 181, 213) -1px 0px 0px, rgb(161, 246, 162) -1px -1px 0px, rgb(255, 181, 213) 1px -1px 0px, rgb(161, 246, 213) -1px 1px 0px;
+--main-font: "SN Pro", sans-serif;
+    /* ? Other Settings */
+    /* --margin: 10px; */
+    --padding: 10px;
+    /* --border:  */
+        --sidebar-width: 200px;
+    --box-sizing: border-box;
+    --border-radius: 10px;
+    --box-shadow: inset 13px 0px 6px -10px rgb(66 66 66 / 56%), inset -13px 0px 6px -10px rgb(66 66 66 / 56%), inset 0px 13px 6px -10px #ffffff, inset 0px -13px 6px -10px rgb(66 66 66 / 38%);
+    --filter: drop-shadow(0px 0px 1px #424242);
+    --webkit-filter: drop-shadow(0px 0px 1px #424242);
+
+}
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+   
+    
+    background-image: url("imgs/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    flex-wrap: nowrap;
+    margin: 0;
+      padding: 0;
+      overflow: visible;
+}
+
+
+
+#wrap {
+   position: relative; 
+    width: 1200px;       
+    min-width: 1200px;
+    margin: 10px auto;  
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+.cont1 {
+    display: grid;
+    grid-template: 
+    "header2 header2"
+    "main2 sidebar2"
+    / 1fr 400px ; 
+ width: 1200px;
+    margin: 20px auto;
+    padding: var(--padding);
+    position: relative;
+    z-index: 0;
+ grid-gap: 10px;
+box-sizing: border-box;
+    
+
+    /* fancy */
+
+}
+/* ========================== */
+/* HEADER */
+/* ========================== */
+
+
+.header2 {
+    grid-area: header2;
+background-image: url(imgs/header.jpg);
+height:200px;
+ box-shadow: var(--box-shadow);
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.header-text{ 
+    font-family: var(--header-font);
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    z-index: 100;
+    top: -75px;
+    left: 400px;
+    position: absolute;
+    text-shadow: var(--header-text-shadow);
+     -webkit-text-stroke: 2px rgb(247, 243, 172);
+}
+/* ========================== */
+/* ABOUT */
+/* ========================== */
+.about {
+    grid-area: main2;
+ box-shadow: var(--box-shadow);
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+/* ========================== */
+/* SIDEBAR */
+/* ========================== */
+.sidebar2 {
+    grid-area: sidebar2;
+    width: 400px;
+     box-shadow: var(--box-shadow);
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}

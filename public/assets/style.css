@@ -78,7 +78,7 @@ box-sizing: border-box;
     width: 1200px;
     margin: 20px auto;
     padding: var(--padding);
-     position: relative;
+    position: relative;
     z-index: 0;
 
     box-shadow: var(--box-shadow);
@@ -127,14 +127,6 @@ header {
      -webkit-text-stroke: 2px rgb(247, 243, 172);
 }
 
-/* .header-sections img {
-   width: 70%;
-   height: auto;
-  
-    -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
-  mask-image: radial-gradient(circle, black 60%, transparent 100%);
-
-} */
 
 .header-sections {
      
@@ -153,16 +145,7 @@ header {
     -webkit-mask-image: radial-gradient(circle, rgb(224, 55, 55) 70%, transparent 100%);
     mask-image: radial-gradient(circle, black 70%, transparent 100%);
 }
-/* .header-sections::before {
-    content: "";
-    height: auto;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
+
 
 /* ! header font */
 .cherry-bomb-one-regular {
@@ -402,3 +385,36 @@ position: absolute;
 
 }
 
+
+
+
+/* =============================== */
+/* WEBMASTER HTML */
+/* =============================== */
+
+.cont1 {
+    display: grid;
+    grid-template: 
+    "header2 header2"
+    "main2 sidebar2"
+    / 1fr 200px ; 
+ width: 1200px;
+    margin: 20px auto;
+    padding: var(--padding);
+    position: relative;
+    z-index: 0;
+
+    box-shadow: var(--box-shadow);
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+    /* fancy */
+
+}
+
+.header2 {
+    grid-area: header2;
+background-image: url(imgs/header1.jpg);
+}
