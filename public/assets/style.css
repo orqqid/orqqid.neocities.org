@@ -354,6 +354,14 @@ grid-area: footer;
     white-space: nowrap;
 
 }
+.divider3 {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+ align-self: center;
+   align-items: center;
+   justify-content: center;
+}
 .button {
     display: flex;
     flex-direction: column;
