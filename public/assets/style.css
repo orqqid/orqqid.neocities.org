@@ -276,20 +276,18 @@ font-family: var(--main-font);
 }
 .imageart {
     display: flex;
-
-    width: 375px;
-    box-sizing: var(--box-sizing);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    filter: var(--filter);
-    -webkit-filter: var(--webkit-filter);
+    width: 300px;
+    /* border-width: 8px;
+          border-style: solid;
+          border-image: url("imgs/borderimg.png") 10 fill round; */
+      
 }
 .chat {
     display:flex;
     align-items: center;
     justify-content: center;
     height: 300px;
-    width: 375px;
+    width: 400px;
     box-sizing: var(--box-sizing);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -346,7 +344,16 @@ grid-area: footer;
     overflow: visible;
     white-space: nowrap;
 }
+.border {
+    position: absolute;
+    z-index: 100;
+    top: 620px;
+    left: 365px;
+    transform: translateX(-50%);
+    overflow: visible;
+    white-space: nowrap;
 
+}
 .button {
     display: flex;
     flex-direction: column;
