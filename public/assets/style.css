@@ -285,6 +285,9 @@ font-family: var(--main-font);
     -webkit-filter: var(--webkit-filter);
 }
 .chat {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     height: 300px;
     width: 375px;
     box-sizing: var(--box-sizing);
@@ -310,6 +313,16 @@ grid-area: footer;
   background-image: url(imgs/footer.bg.jpg);
   background-position: -175px;
 
+}
+
+.footer-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Sour Gummy", sans-serif;
+    text-shadow: rgb(245, 159, 196) 1px 1px 0px, rgb(236, 235, 209) 0px 1px 0px, rgb(245, 159, 196) 1px 0px 0px, rgb(243, 244, 206) 0px -1px 0px, rgb(245, 159, 196) -1px 0px 0px, rgb(161, 246, 162) -1px -1px 0px, rgb(245, 159, 196) 1px -1px 0px, rgb(233, 246, 186) -1px 1px 0px;
+    color: rgb(255, 255, 254);
 }
 
 
