@@ -347,7 +347,7 @@ grid-area: footer;
 .border {
     position: absolute;
     z-index: 100;
-    top: 620px;
+    top: 655px;
     left: 365px;
     transform: translateX(-50%);
     overflow: visible;
