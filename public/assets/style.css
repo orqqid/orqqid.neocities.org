@@ -206,10 +206,13 @@ background: 2px solid red;
 .upd-box {
    overflow: scroll;
 height:100px;
+background: rgb(250, 251, 217);
 }
 .upd-txt {
      font-family: var(--main-font);
-     color: pink;
+     font-size: 20px;
+     color: rgb(250, 134, 213);
+    -webkit-text-stroke: 0.5px rgb(254, 96, 206);
 }
 .blinkies {
     margin-top: 5px;
