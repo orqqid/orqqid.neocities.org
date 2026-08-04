@@ -68,7 +68,16 @@ body {
 }
 
 
-
+.construction {
+    position: fixed;
+    width: 100vw;
+   height: 100vh;
+   z-index: 9999;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
 .wrap {
    position: relative; 
     width: 1200px;       
@@ -134,10 +143,38 @@ height:200px;
     grid-area: main2;
  box-shadow: var(--box-shadow);
     color: black;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     z-index: 0;
+    padding: 2px;
+}
+.favs-header {
+    font-family: var(--header-font);
+    color: var(--heading-color);
+    text-shadow: var(--button-text-shadow);
+    font-size: 50px;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(250, 203, 251);
+}
+.games-header {
+    font-family: var(--header-font);
+    color: var(--heading-color);
+    text-shadow: var(--button-text-shadow);
+    font-size: 40px;
+    text-align: left;
+    -webkit-text-stroke: 1px rgb(250, 203, 251);
+}
+.favs-txt {
+    font-family: var(--main-font);
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    -webkit-text-stroke: 1px rgb(250, 203, 251);
 }
 /* ========================== */
 /* SIDEBAR */
