@@ -341,9 +341,9 @@ grid-area: footer;
 .apple { 
     position: absolute;
     z-index: 100;
-    bottom: -115px;
-    right: -1475px;
-    transform: translateX(-50%);
+    bottom: -100px;
+    left: -100px; 
+    transform: translateX(0); 
     overflow: visible;
     white-space: nowrap;
 }
